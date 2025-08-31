@@ -37,15 +37,15 @@ Untuk menjalankan proyek ini, Anda disarankan menggunakan Conda untuk manajemen 
 
 1. Buat lingkungan Conda baru:
    ```bash
-   conda create --name bike-sharing-analysis python=3.10
+   conda create --name main-ds python=3.10
    ```
 2. Aktifkan lingkungan:
    ```bash
-   conda activate bike-sharing-analysis
+   conda activate main-ds
    ```
 3. Instal semua paket yang dibutuhkan:
    ```bash
-   conda install pandas matplotlib seaborn streamlit babel
+   pip install -r requirements.txt
    ```
 
 ## Cara Menjalankan
@@ -59,7 +59,7 @@ Buka dan jalankan file `notebook.ipynb` menggunakan Jupyter Notebook atau VS Cod
 Untuk menjalankan dasbor, pastikan Anda berada di direktori utama proyek, lalu jalankan perintah berikut di terminal Anda:
 
 ```bash
-streamlit run dashboard.py
+streamlit run dashboard/dashboard.py
 ```
 
 Setelah itu, dasbor akan otomatis terbuka di browser Anda.
